@@ -1,0 +1,9 @@
+SITE VITRINE GROUPE HUVIG — Installation
+========================================
+1. Backend : cd backend && pip install -r requirements.txt
+   Copiez .env.example en .env et remplissez les valeurs (demandez-moi les vraies valeurs de production).
+   Lancement : uvicorn server:app --host 0.0.0.0 --port 8001
+2. Frontend : cd frontend && yarn install && yarn start
+   Créez frontend/.env avec : REACT_APP_BACKEND_URL=http://localhost:8001
+3. MongoDB local requis (mongodb://localhost:27017).
+Documentation complète : memory/PRD.md — Identifiants : memory/test_credentials.md

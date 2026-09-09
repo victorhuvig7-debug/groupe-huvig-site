@@ -1,0 +1,150 @@
+{
+  "project_name": "Groupe Huvig (GHV) - Showcase & Admin Panel",
+  "app_type": "automotive_showcase_site_vitrine_with_admin_panel",
+  "language": "fr",
+  "brand": {
+    "name": "Groupe Huvig (GHV)",
+    "legal_entity": "SASU",
+    "location": "Chalon-sur-Saône, Bourgogne, France",
+    "activity": "Achat & Revente de Véhicules d'Exception et d'Occasion",
+    "logo_concept": "Mot-clé 'GHV' en typographie grasse noire/blanche avec accentuation rouge sur le H, silhouette de véhicule au-dessus, sous-titre 'GROUPE HUVIG', esthétique sportive premium."
+  },
+  "design_archetype": "ARCHETYPE 2: THE PERFORMANCE PRO & SWISS AUTOMOTIVE LUXURY",
+  "color_system": {
+    "theme": "dark_obsidian_primary",
+    "background_primary": "#0A0A0A",
+    "background_secondary": "#141414",
+    "surface_card": "#1A1A1A",
+    "surface_card_hover": "#222222",
+    "accent_primary": "#FF1E27",
+    "accent_secondary": "#E63946",
+    "accent_glow": "rgba(255, 30, 39, 0.25)",
+    "text_primary": "#FFFFFF",
+    "text_muted": "#A1A1AA",
+    "text_dark_context": "#71717A",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "border_accent": "rgba(255, 30, 39, 0.4)",
+    "status": {
+      "available": "#22C55E",
+      "reserved": "#F59E0B",
+      "sold": "#EF4444"
+    }
+  },
+  "typography": {
+    "heading_font": "Outfit, Cabinet Grotesk, sans-serif",
+    "body_font": "Inter, system-ui, sans-serif",
+    "specs_font": "'JetBrains Mono', 'Fira Code', monospace",
+    "hierarchy": {
+      "hero_title": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none uppercase",
+      "section_heading": "text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight uppercase",
+      "subheading": "text-xl sm:text-2xl font-bold tracking-normal",
+      "card_title": "text-lg sm:text-xl font-bold",
+      "body_regular": "text-base leading-relaxed text-zinc-300",
+      "specs_label": "text-xs font-mono uppercase tracking-[0.2em] text-zinc-400"
+    }
+  },
+  "spacing_and_layout": {
+    "grid_mode": "MODE A: Tetris Grid for Hero Showcase & High Density Grid for Specs/Admin",
+    "hero_padding": "py-24 lg:py-32 px-4 sm:px-8 lg:px-12",
+    "section_gap": "py-16 sm:py-24",
+    "card_padding": "p-6 sm:p-8",
+    "container_max_width": "max-w-7xl mx-auto"
+  },
+  "motion_and_effects": {
+    "smooth_scroll": "Lenis smooth scroll enabled",
+    "hero_animation": "Line-by-line kinetic reveal with staggered framer-motion overlay",
+    "card_hover": "Transform translate-y-[-4px] transition-all duration-300 shadow-[0_10px_30px_rgba(255,30,39,0.15)] border-red-500/40",
+    "marquee": "Slow kinetic text loop running 'GROUPE HUVIG • QUALITÉ CERTIFIÉE • ACHAT REVENTE • CHALON-SUR-SAÔNE'",
+    "glassmorphism": "backdrop-blur-xl bg-black/70 border border-white/10"
+  },
+  "pages_and_components": {
+    "navigation_header": {
+      "style": "Fixed top bar, glassmorphism backdrop-blur-md bg-black/80 border-b border-white/10 z-50",
+      "elements": ["Logo GHV with Red H Accent", "Catalogue", "Vendre sa voiture (Dépôt)", "À propos & Avis", "Contact", "Boutons rapides Appeler & WhatsApp"]
+    },
+    "hero_section": {
+      "type": "Kinetic Showroom Hero",
+      "content": "Grand titre 'L'EXCELLENCE AUTOMOBILE À CHALON-SUR-SAÔNE', sous-titre engagé, filtres de recherche rapide (Marque, Budget, Carburant, Boîte), CTA principal 'Découvrir le Catalogue' + 'Proposer mon Véhicule'",
+      "background": "Cinematic dark car backdrop with subtle ambient red lighting gradient"
+    },
+    "vehicle_catalog": {
+      "features": ["Barre de recherche interactive", "Filtres par Marque, Boîte de vitesse, Carburant, Année, Prix Max", "Tri par Prix croissant/décroissant, Kilométrage, Année", "Compteur de véhicules disponibles"],
+      "card_design": "Carte photo grand format, badge de statut (Disponible / Réservé), spécifications clés en grille (Année, Km, Carburant, Boîte), prix mis en valeur en rouge accentué, boutons 'Voir le véhicule' + 'Contact rapide WhatsApp'"
+    },
+    "vehicle_detail_modal_or_page": {
+      "carousel": "Carrousel d'images HD interactif avec vignettes, mode plein écran (Lightroom / Dialog)",
+      "specs_grid": "Tableau dynamique des caractéristiques : Marque, Modèle, Année, Kilométrage, Carburant, Boîte de vitesses, Puissance, Prix TTC",
+      "description": "Section détaillée de l'état du véhicule, options & équipements, historique d'entretien",
+      "ctas": ["Bouton Appeler Directement (tél:)", "Bouton WhatsApp Direct avec message pré-rempli sur le véhicule", "Formulaire de Demande d'Informations / Essai"]
+    },
+    "trade_in_deposit_section": {
+      "title": "Proposer sa Voiture à la Revente (Estimation Gratuite)",
+      "form_fields": ["Nom & Prénom", "Téléphone & Email", "Marque & Modèle", "Année & Kilométrage", "Prix souhaité (€)", "Description / Options", "Photos du véhicule (upload simulé / lien)"],
+      "cta": "Envoyer ma demande de rachat"
+    },
+    "social_and_contact_section": {
+      "title": "Restez Connectés avec le Groupe Huvig",
+      "social_links": [
+        {"platform": "WhatsApp", "url": "https://wa.me/33600000000", "label": "Discuter en direct sur WhatsApp"},
+        {"platform": "Instagram", "url": "https://instagram.com", "label": "Suivez-nous sur Instagram"},
+        {"platform": "Facebook", "url": "https://facebook.com", "label": "Page Facebook GHV"},
+        {"platform": "TikTok", "url": "https://tiktok.com", "label": "Vidéos TikTok GHV"},
+        {"platform": "Snapchat", "url": "https://snapchat.com", "label": "Snapchat GHV"}
+      ],
+      "contact_form": ["Nom complet", "Téléphone", "Email", "Sujet (Achat, Revente, Autre)", "Message"]
+    },
+    "admin_panel": {
+      "access": "Interface sécurisée réservée à l'administrateur GHV",
+      "tabs": [
+        {"id": "dashboard", "label": "Vue d'ensemble & Stats (Total autos, Ventes du mois, Leads)"},
+        {"id": "inventory", "label": "Gestion du Catalogue (Ajouter, Modifier, Supprimer, Changer Statut)"},
+        {"id": "inquiries", "label": "Demandes d'Information Client (Leads)"},
+        {"id": "deposits", "label": "Offres de Revente Particuliers (Rachat/Dépôt-Vente)"}
+      ]
+    }
+  },
+  "image_urls": {
+    "hero_car": "https://images.pexels.com/photos/20131971/pexels-photo-20131971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "showroom_main": "https://images.unsplash.com/photo-1776102668992-87c62534c475?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcG9ydHMlMjBjYXIlMjBzaG93cm9vbSUyMGJsYWNrJTIwcmVkfGVufDB8fHx8MTc4ODcyNjYzOHww&ixlib=rb-4.1.0&q=85",
+    "ferrari_red": "https://images.pexels.com/photos/38304542/pexels-photo-38304542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "black_sports_coupe": "https://images.unsplash.com/photo-1506610654-064fbba4780c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHw3fHxibGFjayUyMHNwb3J0cyUyMGNhcnxlbnwwfHx8fDE3ODg3MjY2NDV8MA&ixlib=rb-4.1.0&q=85",
+    "porsche_red_911": "https://images.unsplash.com/photo-1580446623001-3abf670c5c55?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwxfHxyZWQlMjBzcG9ydHMlMjBjYXJ8ZW58MHx8fHwxNzg4NzI2NjQ1fDA&ixlib=rb-4.1.0&q=85",
+    "matte_black_lamborghini": "https://images.unsplash.com/photo-1628519592419-bf288f08cef5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxibGFjayUyMHNwb3J0cyUyMGNhcnxlbnwwfHx8fDE3ODg3MjY2NDV8MA&ixlib=rb-4.1.0&q=85",
+    "red_coupe": "https://images.unsplash.com/photo-1574805094374-5e1ec7a92c8d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxyZWQlMjBzcG9ydHMlMjBjYXJ8ZW58MHx8fHwxNzg4NzI2NjQ1fDA&ixlib=rb-4.1.0&q=85",
+    "headlight_detail": "https://images.unsplash.com/photo-1564435147551-fcd1d3d773f4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwzfHxyZWQlMjBzcG9ydHMlMjBjYXJ8ZW58MHx8fHwxNzg4NzI2NjQ1fDA&ixlib=rb-4.1.0&q=85",
+    "dashboard_detail": "https://images.unsplash.com/photo-1706675804583-58600a7e7692?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwyfHxwb3JzY2hlJTIwYWxwaW5lJTIwYm13JTIwYXVkaSUyMHNwb3J0cyUyMGNhciUyMGJsYWNrJTIwZGFya3xlbnwwfHx8fDE3ODg3MjY2Mzh8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "testing_and_accessibility": {
+    "data_testid_rule": "Every button, input, link, tab, modal, and key card MUST include a kebab-case data-testid attribute.",
+    "sample_test_ids": [
+      "nav-brand-logo",
+      "nav-catalog-link",
+      "nav-trade-in-link",
+      "nav-contact-link",
+      "nav-admin-link",
+      "nav-call-now-button",
+      "nav-whatsapp-button",
+      "hero-search-input",
+      "catalog-filter-brand-select",
+      "catalog-filter-fuel-select",
+      "catalog-filter-price-slider",
+      "vehicle-card-{id}",
+      "vehicle-card-details-btn-{id}",
+      "vehicle-card-whatsapp-btn-{id}",
+      "vehicle-modal-image-carousel",
+      "vehicle-inquiry-submit-btn",
+      "trade-in-form-submit-btn",
+      "contact-form-submit-btn",
+      "admin-tab-inventory",
+      "admin-add-vehicle-btn"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the black/red/white brand guidelines for Groupe Huvig (GHV). Never default to generic SaaS blue or standard gray.",
+    "Ensure all user text and labels are written in elegant, natural French.",
+    "Implement Sonner for crisp toasts upon form submission or admin actions.",
+    "Ensure responsive design from mobile (375px) to ultra-wide desktop displays.",
+    "Include sample seed vehicles with complete details (e.g. Porsche 911 Carrera, Alpine A110, BMW M4, Audi RS6, Mercedes-AMG C63, Golf R) to make the showroom feel rich and authentic.",
+    "Provide full admin panel authentication state simulation or toggle so the user/evaluator can easily review both visitor and admin flows."
+  ]
+}
